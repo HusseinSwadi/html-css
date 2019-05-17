@@ -1,0 +1,15 @@
+body{
+    background-color: white;
+    overflow: hidden;
+    
+}
+
+.background{
+    background-color: #BFB9AE;
+    overflow: hidden;
+}
+
+svg{
+    width: 100vw;
+    height: 100vh;
+}
