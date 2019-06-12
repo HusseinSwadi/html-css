@@ -1,15 +1,232 @@
 body{
     background-color: white;
-    overflow: hidden;
     
 }
 
 .background{
     background-color: #BFB9AE;
     overflow: hidden;
+    position: relative;
 }
 
 svg{
     width: 100vw;
     height: 100vh;
 }
+
+
+/*https://theartificial.com/blog/2018/05/23/svg-animation.html*/
+.hand {
+    animation-name: hand;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    transform-origin: 30% 80%;
+}
+
+@keyframes hand {
+    0%   { transform: rotate(20deg); }
+    50%  { transform: rotate(-30deg); }
+    100% { transform: rotate(20deg); }
+}
+
+h2 {
+    font-family: sans-serif;
+    font-size: 17px; 
+    color: cadetblue;
+}
+
+
+.text {
+    position: absolute;
+    bottom: 5%;
+    left: 67%;
+    transform: rotate(-34deg);
+}
+
+/*
+.draaien {
+    font-size: 1vw;
+    position: absolute;
+    bottom: 2px;
+    right: 2vw; 
+    color: darkred
+}
+*/
+
+/* Totally for style */
+
+#weapon1{
+    display: none;
+    
+}
+/*#weapon2 */
+
+#weapon2{
+    display: none;
+    transform: translate(20px, 550px);
+    transform-origin: 50% 50%;
+}
+.test {
+    background-color: blue;
+    transform: rotate(-20deg);
+    
+}
+
+.slider {
+    position: absolute;
+    bottom: 39%; 
+    left: 2.25%; 
+    width: 310px;
+    -webkit-appearance: none;
+    height: 25px;
+    background: red;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: grey;
+    cursor: pointer;
+  }
+  
+  .slider:hover {
+    opacity: 1;
+  }
+
+  #demo1, demo {
+    position:absolute;  
+    bottom: 36.5%; 
+    left: 1%; 
+    font-size: 20px;
+    color: red;
+  }
+
+.text1 {
+    
+    font-size: 50px;
+}
+
+.position {
+    position:absolute;  
+    -webkit-appearance: none;
+    font-size: 60px;
+}
+
+.position2{
+    bottom: 39%;
+    color: red;
+    width: 710px;
+    left: 6%; 
+    
+}
+
+.Num {
+    color: red;
+    font-size: 100px;
+    width: 710px;
+    left: 2%; 
+    margin-bottom: 1.5%;
+}
+
+.position1{
+    bottom: 75%;
+    color: red;
+    width: 710px;
+    left: 6%; 
+    
+}
+
+.position3{
+    bottom: 15%;
+    color:  #BFB9AE;
+    background-color: red;
+    padding-left: 0.5%;
+    left: 1%;
+}
+
+.position4{
+    bottom: 75%;
+    
+}
+
+.position5{
+    bottom: 39%;
+}
+
+.stroke{
+    stroke: #FFFFFF;
+    stroke-width: 20;
+}
+    
+#Rectangle1 {
+    height: 320px;
+    width: 320px;
+    
+}
+
+#Rectangle:a {
+    stroke: #FFFFFF;
+    stroke-width: 20;
+}
+
+#Rectangle-Copy-2:active {
+    stroke: #FFFFFF;
+    stroke-width: 20;
+}
+
+#SCREEEN-2 {
+    position: absolute;
+    margin-left: 10px !important;
+}
+
+@media only screen and (max-width: 768px) {
+ 
+    #Rectangle1 {
+    height: 320px;
+    width: 320px;
+    margin-left: 350px; 
+}
+    
+    .Num {
+    color: red;
+    font-size: 50px;
+    width: 710px;
+    left: 2%; 
+    margin-bottom: 6.5%;
+}
+    
+.position {
+    position:absolute;  
+    -webkit-appearance: none;
+    font-size: 50px;
+    margin-left: 2px;
+    
+}
+    
+    .position1{
+    bottom: 75%;
+    color: red;
+    width: 710px;
+    left: 10%; 
+    
+}
+    
+    .position2{
+    bottom: 39%;
+    color: red;
+    width: 710px;
+    left: 10%; 
+}
+    #demo1, demo {
+    display: none;
+  }
+    
+
+}
+
