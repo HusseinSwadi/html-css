@@ -1,16 +1,9 @@
-body{
-    background-color: white;
-    
-}
-
 .background{
     background-color: #BFB9AE;
-    overflow: hidden;
-    position: relative;
 }
 
 svg{
-    width: 100vw;
+    width: 100%;
     height: 100vh;
 }
 
@@ -42,18 +35,6 @@ h2 {
     left: 67%;
     transform: rotate(-34deg);
 }
-
-/*
-.draaien {
-    font-size: 1vw;
-    position: absolute;
-    bottom: 2px;
-    right: 2vw; 
-    color: darkred
-}
-*/
-
-/* Totally for style */
 
 #weapon1{
     display: none;
@@ -108,13 +89,11 @@ h2 {
   }
 
 .text1 {
-    
     font-size: 50px;
 }
 
 .position {
     position:absolute;  
-    -webkit-appearance: none;
     font-size: 60px;
 }
 
@@ -143,11 +122,16 @@ h2 {
 }
 
 .position3{
-    bottom: 15%;
+    bottom: 1000%;
     color:  #BFB9AE;
     background-color: red;
     padding-left: 0.5%;
     left: 1%;
+}
+
+button{
+    position: absolute;
+    width: 100%;
 }
 
 .position4{
@@ -170,6 +154,11 @@ h2 {
     
 }
 
+#Rectangle1:hover {
+    stroke: black;
+    stroke-width: 10px;
+}
+
 #Rectangle:a {
     stroke: #FFFFFF;
     stroke-width: 20;
@@ -180,9 +169,34 @@ h2 {
     stroke-width: 20;
 }
 
+#Rectangle-Copy-2:hover {
+    stroke: black;
+    stroke-width: 10px;
+}
+
 #SCREEEN-2 {
     position: absolute;
     margin-left: 10px !important;
+}
+
+@keyframes slide-top {
+    0% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    100% {
+      -webkit-transform: translateY(-400px);
+              transform: translateY(-400px);
+    }
+  }
+
+.handje:hover{
+    filter: drop-shadow( 10px 10px 20px red );
+    animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.handje{
+    transition: .5s all;
 }
 
 @media only screen and (max-width: 768px) {
@@ -198,7 +212,7 @@ h2 {
     font-size: 50px;
     width: 710px;
     left: 2%; 
-    margin-bottom: 6.5%;
+    margin-bottom: 16%;
 }
     
 .position {
@@ -210,7 +224,7 @@ h2 {
 }
     
     .position1{
-    bottom: 75%;
+    bottom: 650px;
     color: red;
     width: 710px;
     left: 10%; 
@@ -218,7 +232,7 @@ h2 {
 }
     
     .position2{
-    bottom: 39%;
+    bottom: 45%;
     color: red;
     width: 710px;
     left: 10%; 
@@ -227,6 +241,17 @@ h2 {
     display: none;
   }
     
+    svg{
+        width: 289%;
+    }
+    
+    .text{
+        display: none;
+    }
+    
+    .position3 {
+        bottom: 220px;
+    }
 
 }
 

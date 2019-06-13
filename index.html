@@ -8,8 +8,8 @@
 <div class="background">
 
 
-<svg width="1147px" height="1600px" viewBox="0 0 1147 1600" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+<svg viewBox="0 0 1147 1600" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g class="handje"  id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="Desktop" transform="translate(800, 0)">
             <path d="M530.109966,877.976699 L2573.35836,3907.21702 L2184.69027,4169.37696 L117.02268,1103.9337 L-99.3556268,794.913454 L2065.98624,-721.275247 L2312.10104,-369.786887 L530.109966,877.976699 Z" id="bruin-vlak" fill="#ADA185"></path>
             <path d="M320.520783,1163.62959 L337.261394,1152.31112 C405.480039,1106.29014 498.089556,1124.2849 544.11054,1192.50355 C544.114417,1192.50929 544.118293,1192.51504 544.122169,1192.52079 L2254.79007,3729.14642 C2300.79699,3797.36475 2282.79793,3889.96188 2214.58602,3935.97832 L2197.85704,3947.31403 C2129.63839,3993.33502 2037.02887,3975.34026 1991.00789,3907.12161 C1991.00401,3907.11587 1991.00014,3907.11012 1990.99626,3907.10437 L280.328365,1370.47874 C234.321443,1302.2604 252.320502,1209.66328 320.532414,1163.64683 Z" id="Rectangle" fill="#000000"></path>
@@ -66,7 +66,11 @@
 
     <h1 class="text1 position position1">CHOOSE TOOL</h1>
     <h1 class="text1 position position2">SIZE TOOL</h1>
-    <h1 class="text1 position position3">CLICK SPACEBAR</h1>
+    
+    <button onclick="myFunction()">
+    <h1 id="positionspace" class="text1 position position3">CLICK SPACEBAR</h1>
+    </button>
+    
     <h1 class="Num position position4">1</h1>
     <h1 class="Num position position5">2</h1>
 
@@ -171,6 +175,7 @@
             
         }
         
+    //spacebar funtion
         function keyPressed(event){
             var button = event.keyCode;
             return button;
@@ -180,6 +185,11 @@
             if(keyPressed(event) == 32){
                 document.getElementById("start").classList.toggle("hand");
             }
+        }
+    
+        function myFunction() {
+            var spacebar = document.getElementById("positionspace");
+            document.getElementById("start").classList.toggle("hand");  
         }
         
     </script>
