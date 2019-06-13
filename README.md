@@ -11,3 +11,14 @@ De interacties die ik heb verwezenlijkt zijn. Hovers klik en schuif animaties. D
 <b>Clicks:</b> De gebruiker kan kiezen tussen een schep en een hamer. Ook kan de grootte worden aangepast.
 
 <b>Keys</b> spatiebar.
+
+Ik wilde door middel van mijn website de gebruiker op speelse wijze de elementen kunnen veranderen naar hun eigen. De gebruiker kan zelf de grootte aanpassen en kiezen welk voorwerp ze willen gebruiken.
+
+
+<b>Bronnen:</b>
+
+https://css-tricks.com/snippets/css/keyframe-animation-syntax/
+https://css-tricks.com/transforms-on-svg-elements/
+https://www.w3schools.com/cssref/sel_hover.asp
+https://www.w3schools.com/jsref/event_onclick.asp
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_rangeslider
