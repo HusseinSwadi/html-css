@@ -1,3 +1,64 @@
+body{
+    overflow:hidden; 
+}
+@keyframes loading-animation {
+    0% {
+        top: 0;
+    }
+    
+    100% {
+        top: 101vh;
+    }
+}
+
+.loadingscreen {
+    position: absolute;
+    top: 0;
+    height: 101vh;
+    width: 100vw;
+    background-color: #ADA185;
+    z-index: 100;
+    
+    animation-name: loading-animation;
+    animation-delay: 4s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes loading-animation-bar {
+    0% {
+        width: 5%;
+    }
+    
+    100% {
+        width: 25%;
+    }
+}
+
+.loadingscreen div {
+    height: .5rem;
+    width: 0%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: aliceblue;
+    
+    animation-name: loading-animation-bar;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+.loadingscreen div p {
+    font-family: "Helvetica";
+    text-align: center;
+    text-transform: uppercase;
+    color: aliceblue;
+    padding-top: 10px;
+}
+
 .background{
     background-color: #BFB9AE;
 }
@@ -122,7 +183,7 @@ h2 {
 }
 
 .position3{
-    bottom: 1000%;
+    bottom: 5000%;
     color:  #BFB9AE;
     background-color: red;
     padding-left: 0.5%;
@@ -130,6 +191,10 @@ h2 {
 }
 
 button{
+    background-color: none;
+    border-radius: 0;
+    border: none;
+    height: 0;
     position: absolute;
     width: 100%;
 }
@@ -200,6 +265,18 @@ button{
 }
 
 @media only screen and (max-width: 768px) {
+    
+    #positionspace {
+        color: transparent;
+    }
+    
+    #positionspace::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: "CLICK HERE";
+        color: #BFB9AE;
+    }
  
     #Rectangle1 {
     height: 320px;
